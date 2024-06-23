@@ -1,0 +1,18 @@
+{
+  "QA": {
+    "url1": "https://specflowoss.github.io/Calculator-Demo/Calculator.html",
+    "url2": "https://specflowoss.github.io/Calculator-Demo/Calculator.html"
+  },
+  "PreProd": {
+    "url1": "https://specflowoss.github.io/Calculator-Demo/Calculator.html",
+    "url2": "https://specflowoss.github.io/Calculator-Demo/Calculator.html"
+  },
+  "Production": {
+    "url1": "https://specflowoss.github.io/Calculator-Demo/Calculator.html",
+    "url2": "https://specflowoss.github.io/Calculator-Demo/Calculator.html"
+  },
+  "Dev": {
+    "url1": "https://specflowoss.github.io/Calculator-Demo/Calculator.html",
+    "url2": "https://specflowoss.github.io/Calculator-Demo/Calculator.html"
+  }
+}
