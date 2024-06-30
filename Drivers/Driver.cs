@@ -2,6 +2,6 @@
 {
     public class Driver
     {
-        public IWebDriver driver; //user
+        public IWebDriver driver;
     }
 }

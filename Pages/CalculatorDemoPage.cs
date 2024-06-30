@@ -2,11 +2,12 @@
 {
     public class CalculatorDemoPage : Driver
     {
-        //constructor - ctor
-        public CalculatorDemoPage(IWebDriver _driver) 
+        public CalculatorDemoPage(IWebDriver _driver) //constructor - ctor
             => driver = _driver;
 
-        //Elements
+
+        #region start of elements
+
         private IWebElement numbers(string value) =>
             driver.FindElement(By.Id($"{value}-number"));
         private IWebElement result => 
@@ -14,14 +15,22 @@
         private IWebElement addButton =>
             driver.FindElement(By.Id("add-button"));
 
+        #endregion end of elements
 
-        //Methods
+
+        #region start of methods
+
         public void EnterNumber(string flag, string number)
-            => numbers(flag).SendKeys(number);
+        {
+            numbers(flag).Clear();
+            numbers(flag).SendKeys(number);
+        }
 
         public void clickAddButton() => addButton.Click();
 
         public bool GetResult() 
             => result.GetAttribute("value").Equals("");
+
+        #endregion end of methods
     }
 }

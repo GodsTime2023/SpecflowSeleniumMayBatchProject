@@ -176,6 +176,187 @@ this.ScenarioInitialize(scenarioInfo);
             }
             this.ScenarioCleanup();
         }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Add two numbers with single table example")]
+        public virtual void AddTwoNumbersWithSingleTableExample()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add two numbers with single table example", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 33
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 34
+ testRunner.Given("I am on Calculator demo page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+                TechTalk.SpecFlow.Table table1 = new TechTalk.SpecFlow.Table(new string[] {
+                            "first",
+                            "second"});
+                table1.AddRow(new string[] {
+                            "50",
+                            "70"});
+#line 35
+ testRunner.When("I add the follow:", ((string)(null)), table1, "When ");
+#line hidden
+#line 38
+ testRunner.Then("the result should be \"120\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Add multiple numbers with table example")]
+        public virtual void AddMultipleNumbersWithTableExample()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add multiple numbers with table example", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 41
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 42
+ testRunner.Given("I am on Calculator demo page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+                TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
+                            "first",
+                            "second"});
+                table2.AddRow(new string[] {
+                            "50",
+                            "70"});
+                table2.AddRow(new string[] {
+                            "50",
+                            "80"});
+#line 43
+ testRunner.When("I add the follow:", ((string)(null)), table2, "When ");
+#line hidden
+                TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
+                            "result"});
+                table3.AddRow(new string[] {
+                            "120"});
+                table3.AddRow(new string[] {
+                            "130"});
+#line 47
+ testRunner.Then("the result should be:", ((string)(null)), table3, "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Add multiple numbers with table example 2")]
+        public virtual void AddMultipleNumbersWithTableExample2()
+        {
+            string[] tagsOfScenario = ((string[])(null));
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add multiple numbers with table example 2", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 53
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+#line 54
+ testRunner.Given("I am on Calculator demo page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+#line hidden
+                TechTalk.SpecFlow.Table table4 = new TechTalk.SpecFlow.Table(new string[] {
+                            "first",
+                            "second"});
+                table4.AddRow(new string[] {
+                            "50",
+                            "70"});
+                table4.AddRow(new string[] {
+                            "50",
+                            "80"});
+                table4.AddRow(new string[] {
+                            "50",
+                            "90"});
+                table4.AddRow(new string[] {
+                            "50",
+                            "100"});
+                table4.AddRow(new string[] {
+                            "50",
+                            "60"});
+                table4.AddRow(new string[] {
+                            "50",
+                            "50"});
+                table4.AddRow(new string[] {
+                            "100",
+                            "100"});
+#line 55
+ testRunner.When("I add the follow:", ((string)(null)), table4, "When ");
+#line hidden
+                TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
+                            "result"});
+                table5.AddRow(new string[] {
+                            "120"});
+                table5.AddRow(new string[] {
+                            "130"});
+                table5.AddRow(new string[] {
+                            "140"});
+                table5.AddRow(new string[] {
+                            "150"});
+                table5.AddRow(new string[] {
+                            "110"});
+                table5.AddRow(new string[] {
+                            "100"});
+                table5.AddRow(new string[] {
+                            "200"});
+#line 64
+ testRunner.Then("the result should be:", ((string)(null)), table5, "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
     }
 }
 #pragma warning restore

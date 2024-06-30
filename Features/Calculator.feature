@@ -12,6 +12,7 @@ Scenario: Add two numbers
 	When the two numbers are added
 	Then the result should be "120"
 
+
 Scenario Outline: Add two numbers with multiple examples
 	Given I am on Calculator demo page
 	And the "first" number is "<FirstNumber>"
@@ -27,3 +28,45 @@ Examples:
 | 50          | 200          | 250    |
 | 10          | 90           | 100    |
 | 1000        | 1000         | 2000   |
+
+
+Scenario: Add two numbers with single table example
+	Given I am on Calculator demo page
+	When I add the follow:
+	| first | second |
+	| 50    | 70     |
+	Then the result should be "120"
+
+
+Scenario: Add multiple numbers with table example
+	Given I am on Calculator demo page
+	When I add the follow:
+	| first | second |
+	| 50    | 70     |
+	| 50    | 80     |
+	Then the result should be:
+	| result |
+	| 120    |
+	| 130    |
+
+
+Scenario: Add multiple numbers with table example 2
+	Given I am on Calculator demo page
+	When I add the follow:
+	| first | second |
+	| 50    | 70     |
+	| 50    | 80     |
+	| 50    | 90     |
+	| 50    | 100    |
+	| 50    | 60     |
+	| 50    | 50     |
+	| 100   | 100    |
+	Then the result should be:
+	| result |
+	| 120    |
+	| 130    |
+	| 140    |
+	| 150    |
+	| 110    |
+	| 100    |
+	| 200    |
