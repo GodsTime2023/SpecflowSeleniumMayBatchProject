@@ -5,8 +5,8 @@ namespace SpecflowSeleniumMayBatchProject.StepDefinitions
     {
         readConfigData readConfigData;
         CalculatorDemoPage demoPage;
-        //string result1;
-        //string result2;
+        string result1;
+        string result2;
         Dictionary<string, List<string>> resultsCollection;
 
         public CalculatorStepDefinitions(IObjectContainer container)
