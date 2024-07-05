@@ -10,3 +10,5 @@ global using SpecflowSeleniumMayBatchProject.Pages;
 global using SpecflowSeleniumMayBatchProject.Support;
 global using TechTalk.SpecFlow;
 global using SpecflowSeleniumMayBatchProject.Drivers;
+global using SpecflowSeleniumMayBatchProject.Extensions;
+global using SeleniumExtras.WaitHelpers;

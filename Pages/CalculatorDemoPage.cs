@@ -9,24 +9,21 @@
         #region start of elements
 
         private IWebElement numbers(string value) =>
-            driver.FindElement(By.Id($"{value}-number"));
+            driver.FindMyElementAndWait(By.Id($"{value}-number"));
         private IWebElement result => 
-            driver.FindElement(By.Id("result"));
+            driver.FindMyElementAndWait(By.Id("result"));
         private IWebElement addButton =>
-            driver.FindElement(By.Id("add-button"));
+            driver.FindMyElement(By.Id("add-button"));
 
         #endregion end of elements
 
 
         #region start of methods
 
-        public void EnterNumber(string flag, string number)
-        {
-            numbers(flag).Clear();
-            numbers(flag).SendKeys(number);
-        }
+        public void EnterNumber(string flag, string number) 
+            => driver.EnterNumberExtension(numbers(flag), number);
 
-        public void clickAddButton() => addButton.Click();
+        public void clickAddButton() => addButton.ClickAddButton();
 
         public bool GetResult() 
             => result.GetAttribute("value").Equals("");
