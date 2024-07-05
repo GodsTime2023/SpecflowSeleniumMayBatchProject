@@ -7,7 +7,7 @@ namespace SpecflowSeleniumMayBatchProject
         private static readonly string apiUrl = "https://api.openai.com/v1/chat/completions";
         public static string ApiKey()
         {
-            return "sk-proj-yvl6do3PSQWoinlHePh0T3BlbkFJBguiQ0LAkBI1QiyAQYjQ";
+            return "";
         }
 
 
