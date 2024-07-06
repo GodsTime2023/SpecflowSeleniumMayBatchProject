@@ -4,7 +4,7 @@ As an end user i should be able to
 perform a calculator function
 
 
-@ignore
+#@ignore
 Scenario: Add two numbers
 	Given I am on Calculator demo page
 	And the "first" number is "50"

@@ -12,3 +12,8 @@ global using TechTalk.SpecFlow;
 global using SpecflowSeleniumMayBatchProject.Drivers;
 global using SpecflowSeleniumMayBatchProject.Extensions;
 global using SeleniumExtras.WaitHelpers;
+global using AventStack.ExtentReports;
+global using AventStack.ExtentReports.Reporter;
+global using AventStack.ExtentReports.Gherkin;
+global using AventStack.ExtentReports.Gherkin.Model;
+global using AventStack.ExtentReports.Model;
