@@ -17,3 +17,4 @@ global using AventStack.ExtentReports.Reporter;
 global using AventStack.ExtentReports.Gherkin;
 global using AventStack.ExtentReports.Gherkin.Model;
 global using AventStack.ExtentReports.Model;
+global using SpecflowSeleniumMayBatchProject.Pages.SwagLabPages;

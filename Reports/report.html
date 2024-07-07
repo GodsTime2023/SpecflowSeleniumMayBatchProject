@@ -35,7 +35,7 @@
   <ul class="nav-right">
    <li class="m-r-10"><a href="#"><span class="badge badge-primary"></span></a></li>
    <li class="m-r-10">
-    <a href="#"><span class="badge badge-primary">06/07/2024 18:24:29</span></a>
+    <a href="#"><span class="badge badge-primary">07/07/2024 18:31:28</span></a>
    </li>
   </ul>
  </div>
@@ -84,9 +84,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">Calculator</p>
+            <p class="name">Saucedemo</p>
             <p class="text-sm">
-              <span>18:24:29</span> / <span>13296.43 ms</span>
+              <span>18:31:28</span> / <span>12645.96 ms</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -94,17 +94,17 @@
             <div class="detail-head">
               <div class="p-v-10">
                 <div class="info">
-                  <h5 class="test-status text-pass">Calculator</h5>
-                  <span class='badge badge-success'>06/07/2024 18:24:29</span>
-                  <span class='badge badge-danger'>06/07/2024 18:24:42</span>
-                  <span class='badge badge-default'>13296.43 ms</span>
+                  <h5 class="test-status text-pass">Saucedemo</h5>
+                  <span class='badge badge-success'>07/07/2024 18:31:28</span>
+                  <span class='badge badge-danger'>07/07/2024 18:31:41</span>
+                  <span class='badge badge-default'>12645.96 ms</span>
                   &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
                   <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
                   <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
                   <span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
                 </div>
- <div class="m-t-10 m-l-5">As an end user i should be able to 
-perform a calculator function</div>               </div>
+ <div class="m-t-10 m-l-5">	As an end user i want to be able to add item 
+	into a basket and verify total item count.</div>               </div>
             </div>
 
 
@@ -112,7 +112,7 @@ perform a calculator function</div>               </div>
       <div class="card">
         <div class="card-header" role="tab">
           <div class="card-title">
-            <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Scenario: Add two numbers with single table example</div>
+            <div class="node" id="2"><span class="badge log pass-bg mr-2">Pass</span>Scenario: Verify total basket count</div>
           </div>
         </div>
             <div class="collapse">
@@ -120,25 +120,53 @@ perform a calculator function</div>               </div>
                 
 
                   <div class="step pass-bg" title="">
-                    <span>Given I am on Calculator demo page</span>
+                    <span>Given I am on SwagLab login page</span>
                     
 
                     
 
                   </div>
                   <div class="step pass-bg" title="">
-                    <span>When I add the follow:</span>
+                    <span>Given I enter the following credentials</span>
                     
     <div>
-|first|second|    </div>
+|username|password|    </div>
     <div>
-|50|70|    </div>
+|standard_user|secret_sauce|    </div>
 
                     
 
                   </div>
                   <div class="step pass-bg" title="">
-                    <span>Then the result should be "120"</span>
+                    <span>When I click login button</span>
+                    
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then I am on product page</span>
+                    
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When I add item to cart</span>
+                    
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>When I click the basket</span>
+                    
+
+                    
+
+                  </div>
+                  <div class="step pass-bg" title="">
+                    <span>Then total item in cart is 3</span>
                     
 
                     
@@ -168,13 +196,13 @@ perform a calculator function</div>               </div>
     <div class="col-md-3">
       <div class="card"><div class="card-body">
           <p class="m-b-0">Started</p>
-          <h3>06/07/2024 18:24:29</h3>
+          <h3>07/07/2024 18:31:28</h3>
       </div></div>
     </div>
     <div class="col-md-3">
       <div class="card"><div class="card-body">
           <p class="m-b-0">Ended</p>
-          <h3>06/07/2024 18:24:43</h3>
+          <h3>07/07/2024 18:31:42</h3>
       </div></div>
     </div>
     <div class="col-md-3">
@@ -245,7 +273,7 @@ perform a calculator function</div>               </div>
           </div>
         </div>
         <div class="card-footer">
-          <div><small data-tooltip='1%'><b>3</b> Steps passed</small></div>
+          <div><small data-tooltip='1%'><b>7</b> Steps passed</small></div>
           <div>
             <small data-tooltip='0%'><b>0</b> steps failed, 
             <b>0</b> skipped, <b data-tooltip='%'>0</b> others
@@ -263,7 +291,7 @@ perform a calculator function</div>               </div>
     </div>
   </div></div>
   <script>
-	var timeline = { "Calculator":13296.4341 };
+	var timeline = { "Saucedemo":12645.9567 };
   </script>
   <div class="row">
   </div>
@@ -272,12 +300,12 @@ perform a calculator function</div>               </div>
   var statusGroup = {
     parentCount: 1,
     childCount: 1,
-    grandChildCount: 3,
+    grandChildCount: 7,
     eventsCount: 2,
 
 passParent:1,failParent:0,warningParent:0,skipParent:0,    
 passChild:1,failChild:0,warningChild:0,skipChild:0,infoChild:0,    
-passGrandChild:3,failGrandChild:0,warningGrandChild:0,skipGrandChild:0,infoGrandChild:0,    
+passGrandChild:7,failGrandChild:0,warningGrandChild:0,skipGrandChild:0,infoGrandChild:0,    
 passEvents:0,failEvents:0,warningEvents:0,skipEvents:0,infoEvents:2,  };
 </script>
 
